@@ -1,0 +1,56 @@
+<div class="feedback-modal modal">
+	<div class="modal-back"></div>
+	<div class="modal-wrapper">
+		<button class="modal-exit">
+			<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+				<path d="M1 1L12.9389 12.9389" stroke="white" />
+				<path d="M1.11328 25L24.9911 1.12214" stroke="white" />
+				<path d="M13.0586 13.0605L24.9975 24.9995" stroke="white" />
+			</svg>
+		</button>
+		<div class="feedback-modal__content modal-content modal-content--first active">
+			<div class="feedback-modal__wrapper">
+				<form class="feedback-modal__form form">
+					<h4 class="feedback__form-title form-title">Свяжитесь с нами</h4>
+					<div class="feedback__form-container form-container">
+						<label class="feedback__form-wrapper form-wrapper">
+							<input type="text" class="feedback__form-inp form-inp" data-required="true" />
+							<div class="feedback__form-label form-label">ФИО <b>*</b></div>
+						</label>
+						<label class="feedback__form-wrapper form-wrapper">
+							<input type="tel" class="feedback__form-inp form-inp" data-required="true" data-min-length="11" />
+							<div class="feedback__form-label form-label">номер телефона <b>*</b></div>
+						</label>
+						<label class="feedback__form-wrapper form-wrapper">
+							<input type="text" class="feedback__form-inp form-inp" />
+							<div class="feedback__form-label form-label">Ваш комментарий</div>
+						</label>
+					</div>
+					<button class="feedback__form-btn form-btn btn-primary">
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+								<path d="M5 20C4.72386 20 4.5 20.2239 4.5 20.5C4.5 20.7761 4.72386 21 5 21V20ZM35.3536 20.8536C35.5488 20.6583 35.5488 20.3417 35.3536 20.1464L32.1716 16.9645C31.9763 16.7692 31.6597 16.7692 31.4645 16.9645C31.2692 17.1597 31.2692 17.4763 31.4645 17.6716L34.2929 20.5L31.4645 23.3284C31.2692 23.5237 31.2692 23.8403 31.4645 24.0355C31.6597 24.2308 31.9763 24.2308 32.1716 24.0355L35.3536 20.8536ZM5 21H35V20H5V21Z" fill="#DD921E" />
+							</svg>
+						</span>
+						<strong>отправить</strong>
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+								<path d="M5 20C4.72386 20 4.5 20.2239 4.5 20.5C4.5 20.7761 4.72386 21 5 21V20ZM35.3536 20.8536C35.5488 20.6583 35.5488 20.3417 35.3536 20.1464L32.1716 16.9645C31.9763 16.7692 31.6597 16.7692 31.4645 16.9645C31.2692 17.1597 31.2692 17.4763 31.4645 17.6716L34.2929 20.5L31.4645 23.3284C31.2692 23.5237 31.2692 23.8403 31.4645 24.0355C31.6597 24.2308 31.9763 24.2308 32.1716 24.0355L35.3536 20.8536ZM5 21H35V20H5V21Z" fill="#DD921E" />
+							</svg>
+						</span>
+					</button>
+				</form>
+			</div>
+		</div>
+		<div class="feedback-modal__content modal-content modal-content--second">
+			<div class="feedback-modal__wrapper">
+				<div class="feedback-modal__title">
+					<span>заявка успешно отправлена</span>
+				</div>
+				<div class="feedback-modal__description">
+					<span>Спасибо за заполнение формы! Мы свяжемся с вами в течение 3 рабочих дней</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

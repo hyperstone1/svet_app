@@ -1,0 +1,126 @@
+.hero {
+	&__container {
+		position: relative;
+		display: flex;
+		justify-content: flex-end;
+	}
+	&__content {
+		// margin-top: ;
+		position: absolute;
+		left: 0;
+		top: 12.3rem;
+		&-icon {
+			margin-bottom: 5.1rem;
+			width: 9.5rem;
+			height: 9.5rem;
+		}
+		&-title {
+			width: 60.8rem;
+			margin-bottom: 3rem;
+			font-weight: 300;
+			font-size: 4rem;
+		}
+		&-desc {
+			display: inline-block;
+			width: 46.4rem;
+			margin-bottom: 4.8rem;
+			font-weight: 300;
+			font-size: 2.4rem;
+			line-height: 1.67;
+			text-align: justify;
+			color: #7a80ab;
+			&.mob {
+				display: none;
+			}
+		}
+	}
+	&__links {
+		display: flex;
+		// gap: ;
+		transform: translateX(-0.4rem);
+		&-btn {
+			&:nth-child(1) {
+				width: 24.8rem;
+				height: 10.2rem;
+			}
+			&:nth-child(2) {
+				width: 28rem;
+				height: 10.2rem;
+			}
+		}
+	}
+	&__img {
+		margin-top: -4rem;
+		width: 98.4rem;
+		height: 98.5rem;
+		&.mob {
+			display: none;
+		}
+		img {
+			object-fit: cover;
+		}
+	}
+}
+@media (max-width: 48em) {
+	.hero {
+		overflow: hidden;
+		&__container {
+			padding: 0;
+			flex-direction: column-reverse;
+		}
+		&__img {
+			display: none;
+			margin-top: 0;
+			// transform: scale(-1, 1);
+			&.mob {
+				margin-top: 0;
+				display: block;
+				width: 100%;
+				height: 78.8rem;
+				// transform: translateX(-4.6rem);
+			}
+		}
+		&__links {
+			justify-content: space-between;
+			&-btn {
+				&:nth-child(1) {
+					width: 32.2rem;
+					height: 13.2rem;
+				}
+				&:nth-child(2) {
+					width: 36rem;
+					height: 13.2rem;
+				}
+			}
+		}
+		&__content {
+			position: relative;
+			padding: 3rem 3rem 0 3rem;
+			top: auto;
+			// margin-top: 3rem;
+			&-icon {
+				position: absolute;
+				width: 16rem;
+				height: 16rem;
+				top: -19rem;
+				left: 4rem;
+			}
+			&-title {
+				width: 100%;
+				margin-bottom: 4.8rem;
+				font-size: 5rem;
+			}
+			&-desc {
+				display: none;
+				&.mob {
+					display: inline-block;
+					width: 100%;
+					margin-bottom: 6.4rem;
+					font-size: 3rem;
+					line-height: 1.47;
+					text-align: start;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,55 @@
+.header {
+	padding-top: 4.1rem;
+	&__container {
+		padding: 2.4rem 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__content {
+		display: flex;
+		gap: 24.7rem;
+		&-title {
+			font-weight: 400;
+			font-size: 1.6rem;
+			text-transform: uppercase;
+			color: $gray;
+		}
+		&-name {
+			font-weight: 400;
+			font-size: 1.6rem;
+		}
+		&-link {
+			width: 32.8rem;
+			height: 6.3rem;
+			img {
+				height: 100%;
+				mix-blend-mode: multiply;
+			}
+		}
+		&-item {
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+		}
+	}
+}
+
+@media (max-width: 48em) {
+	.header {
+		padding-top: 12.8rem;
+		&__content {
+			&-title {
+				font-size: 3rem;
+			}
+			&-name {
+				font-size: 3rem;
+			}
+			&-item {
+				&:nth-child(1) {
+					display: none;
+				}
+			}
+		}
+	}
+}

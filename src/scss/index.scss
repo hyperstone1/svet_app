@@ -1,0 +1,32 @@
+@import "./fonts";
+@import "./libs/settings";
+@import "./libs/set";
+@import "./style";
+
+@import "./components/footer";
+@import "./components/header";
+
+@import "./sections/hero.scss";
+@import "./sections/info.scss";
+@import "./sections/process.scss";
+@import "./sections/about.scss";
+
+.mobile {
+	display: none;
+}
+
+body {
+	&.lock {
+		overflow: hidden;
+		touch-action: none;
+	}
+}
+
+@media (max-width: 48em) {
+	.mobile {
+		display: flex;
+	}
+	.desktop {
+		display: none;
+	}
+}

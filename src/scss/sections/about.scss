@@ -1,0 +1,141 @@
+.about {
+	padding-top: 15.7rem;
+	&__top {
+		display: flex;
+		gap: 5.9rem;
+		margin-bottom: 14.2rem;
+		&-icon {
+			width: 9.5rem;
+			height: 9.5rem;
+			svg {
+				width: 100%;
+				height: 100%;
+			}
+		}
+		&-text {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		&-name {
+			font-family: var(--font-family);
+			font-weight: 500;
+			font-size: 1.6rem;
+			text-align: justify;
+		}
+		&-title {
+			font-weight: 300;
+			font-size: 4rem;
+		}
+	}
+	&__main {
+		display: flex;
+		flex-direction: column;
+		gap: 10rem;
+		&.mob {
+			display: none;
+		}
+	}
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		&-text {
+			width: 98.7rem;
+			display: flex;
+			flex-direction: column;
+			gap: 4rem;
+			font-weight: 300;
+			font-size: 2.4rem;
+			line-height: 1.67;
+			text-align: justify;
+			color: #292d32;
+		}
+		&-right {
+			width: 44.6rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			font-weight: 500;
+			font-size: 2.4rem;
+			line-height: 1.67;
+			text-align: justify;
+			color: #292d32;
+			&.mob {
+				display: none;
+			}
+		}
+		&-info {
+			position: relative;
+			padding-bottom: 2rem;
+			&::after {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 0.2rem;
+				background-color: #292d32;
+			}
+		}
+	}
+}
+@media (max-width: 48em) {
+	.about {
+		padding-top: 30.6rem;
+		&__main {
+			gap: 5rem;
+			display: none;
+			&.mob {
+				display: flex;
+			}
+		}
+		&__top {
+			margin-bottom: 8.8rem;
+			&-text {
+				width: 44.4rem;
+			}
+			&-icon {
+				width: 19rem;
+				height: 19rem;
+			}
+			gap: 2.8rem;
+			&-name {
+				display: none;
+			}
+			&-title {
+				font-size: 5rem;
+			}
+		}
+		&__content {
+			flex-direction: column;
+			gap: 4.4rem;
+			&:nth-of-type(1) {
+			}
+			&-text {
+				order: 2;
+				width: 100%;
+				font-size: 3rem;
+				line-height: 1.47;
+				gap: 4.4rem;
+				text-align: start;
+			}
+			&-right {
+				order: 1;
+				width: 100%;
+				font-size: 3rem;
+				line-height: 1.47;
+				text-align: start;
+				&.mob {
+					order: 3;
+					display: flex;
+				}
+			}
+			&-info {
+				padding-bottom: 4.4rem;
+				&:nth-child(2) {
+					display: none;
+				}
+			}
+		}
+	}
+}
