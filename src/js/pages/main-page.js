@@ -8,6 +8,7 @@ if (window.innerWidth >= 769) {
 
 			let scrollPosition = window.scrollY;
 			let windowHeight = window.innerHeight;
+			console.log(scrollPosition, windowHeight);
 
 			if (
 				scrollPosition + windowHeight > bannerTop &&
@@ -22,4 +23,5 @@ if (window.innerWidth >= 769) {
 	}
 
 	window.addEventListener("scroll", handleScroll);
+	window.addEventListener("load", handleScroll);
 }
