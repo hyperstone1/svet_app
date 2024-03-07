@@ -5,9 +5,11 @@
 		gap: 5.9rem;
 		margin-bottom: 14.2rem;
 		&-icon {
-			width: 9.5rem;
-			height: 9.5rem;
-			svg {
+			width: 9.4rem;
+			height: 9.4rem;
+			border-radius: 1.6rem;
+			svg,
+			img {
 				width: 100%;
 				height: 100%;
 			}

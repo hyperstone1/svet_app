@@ -1,18 +1,10 @@
 @font-face {
 	font-family: "Euclid Circular A";
-	src: url("../assets/fonts/EuclidCircularA/EuclidCircularA-Light.eot");
-	src: local("EuclidCircularA"), local("EuclidCircularA-Regular"),
-		url("../assets/fonts/EuclidCircularA/EuclidCircularA-Light.eot?#iefix")
-			format("embedded-opentype"),
+	src: url("../assets/fonts/EuclidCircularA/EuclidCircularA-Light.woff2");
+	src: local("EuclidCircularA"), local("EuclidCircularA-Light"),
 		url("../assets/fonts/EuclidCircularA/EuclidCircularA-Light.woff2")
-			format("woff2"),
-		url("../assets/fonts/EuclidCircularA/EuclidCircularA-Light.woff")
-			format("woff"),
-		url("../assets/fonts/EuclidCircularA/EuclidCircularA-Light.ttf")
-			format("truetype");
+			format("woff2");
 	font-weight: 300;
-	font-style: normal;
-	font-display: swap;
 }
 
 @font-face {
