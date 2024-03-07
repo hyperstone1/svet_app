@@ -8,7 +8,6 @@ window.onload = function () {
 };
 
 var header = document.querySelector(".header");
-var sticky = header.offsetTop;
 
 function myFunction() {
 	console.log("rem: ", rem(10));

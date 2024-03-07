@@ -1,4 +1,21 @@
+import { WOW } from "wowjs";
+import "animate.css";
+import "wowjs/css/libs/animate.css";
+
 if (window.innerWidth >= 769) {
+	new WOW({
+		resetAnimation: false,
+		// callback: function (box) {
+		// 	if (box.classList.contains("request__content-text--anim")) {
+		// 		setTimeout(() => {
+		// 			box.classList.add("anim-fill-text");
+		// 		}, 2200);
+		// 	}
+		// 	// the callback is fired every time an animation is started
+		// 	// the argument that is passed in is the DOM node being animated
+		// },
+	}).init();
+
 	const banners = document.querySelectorAll(".banner");
 
 	function handleScroll() {
@@ -8,7 +25,6 @@ if (window.innerWidth >= 769) {
 
 			let scrollPosition = window.scrollY;
 			let windowHeight = window.innerHeight;
-			console.log(scrollPosition, windowHeight);
 
 			if (
 				scrollPosition + windowHeight > bannerTop &&
